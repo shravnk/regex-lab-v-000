@@ -27,8 +27,12 @@ def first_word_capitalized_and_ends_with_punctuation?(text)
   #binding.pry
 
 end
-first_word_capitalized_and_ends_with_punctuation?("Did you hear about the guy whose whole left side was cut off? He's all right now")
+
 
 def valid_phone_number?(phone)
-
+  if phone.match(/\(?\d{3}\)?\w?\d{3}-?\w?\d{4}/)
+    true
+  else
+    false
+  end
 end
