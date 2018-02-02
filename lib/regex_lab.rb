@@ -20,9 +20,9 @@ def words_five_letters_long(text)
 end
 
 def first_word_capitalized_and_ends_with_punctuation?(text)
-
-  words = text.scan(/\b\w+\b/)
-  binding.pry
+  grammar = true
+  grammar = false if text.scan(/\b\w+\b/)[0] != text.scan(/\b\w+\b/)[0].capitalize
+  #binding.pry
 
 end
 first_word_capitalized_and_ends_with_punctuation?("Did you hear about the guy whose whole left side was cut off? He's all right now")
