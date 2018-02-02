@@ -1,12 +1,10 @@
 def starts_with_a_vowel?(word)
-  word.each do |w|
-    if w.match(/\b+[aeiou]/) == nil
-      false
-    else
-      true
-    end
-  end
+
+  word.match(/\b+[aeiou]/)
+
 end
+
+test = starts_with_a_vowel?("aloof")
 
 def words_starting_with_un_and_ending_with_ing(text)
 
