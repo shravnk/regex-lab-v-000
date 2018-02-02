@@ -22,6 +22,8 @@ end
 def first_word_capitalized_and_ends_with_punctuation?(text)
   grammar = true
   grammar = false if text.scan(/\b\w+\b/)[0] != text.scan(/\b\w+\b/)[0].capitalize
+  grammar = false if text[-1].match(/\W/) == nil
+  grammar
   #binding.pry
 
 end
