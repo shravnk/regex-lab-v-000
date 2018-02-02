@@ -25,7 +25,7 @@ def first_word_capitalized_and_ends_with_punctuation?(text)
   binding.pry
 
 end
-first_word_capitalized_and_ends_with_punctuation("Did you hear about the guy whose whole left side was cut off? He's all right now")
+first_word_capitalized_and_ends_with_punctuation?("Did you hear about the guy whose whole left side was cut off? He's all right now")
 
 def valid_phone_number?(phone)
 
