@@ -7,12 +7,12 @@ def starts_with_a_vowel?(word)
   else
     false
   end
-  
+
 
 end
 
-test = starts_with_a_vowel?("loof")
-binding.pry
+# test = starts_with_a_vowel?("loof")
+# binding.pry
 
 def words_starting_with_un_and_ending_with_ing(text)
 
